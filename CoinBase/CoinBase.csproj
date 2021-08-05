@@ -5,13 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\NewFolder1\**" />
-    <Content Remove="Views\NewFolder1\**" />
-    <EmbeddedResource Remove="Views\NewFolder1\**" />
-    <None Remove="Views\NewFolder1\**" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Folder Include="Views\Components - Copy\" />
     <Folder Include="Views\NewFolder\" />
   </ItemGroup>
 
