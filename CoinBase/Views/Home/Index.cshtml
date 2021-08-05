@@ -8,25 +8,4 @@
     </div>
 </div>
 <script src="~/js/Pages/Index.vue.js"></script>
-
-<script>
-    const routes = [
-        {
-            path: "/",
-            component: Index,
-        },
-    ];
-
-
-    const router = new VueRouter({
-        routes: routes,
-        mode: "history",
-        base: "/",
-    });
-
-    var app = new Vue({
-        el: "#app",
-        router: router,
-    });
-</script>
-
+<script src="~/js/app.js"></script>
