@@ -9,4 +9,8 @@
     <Folder Include="Views\NewFolder\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.RouteAnalyzer" Version="0.5.3" />
+  </ItemGroup>
+
 </Project>
