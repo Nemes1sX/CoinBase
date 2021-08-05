@@ -18,13 +18,16 @@
 
 
     mounted() {
-        setInterval(this.fetchBtcData(), 10000);
+        this.fetchBtcData();
+        setInterval(function () { location.reload()}.bind(this), 10000);
     },
     methods: {
         async fetchBtcData() {
-            
-            const response = await axios.get("https://localhost:5001/api/coinbase/fetch");
-            this.rates = Object.entries(response.data.rates);            
+            const response = await axios.get("https://localhost:5001/api/coinbase/fetch")
+                .catch(error => {
+                    console.log(error);
+                });
+            this.rates = Object.entries(response.data.rates);
         }
     }
 
